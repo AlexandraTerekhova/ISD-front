@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Table</title>
+    <style>
+        table{
+            width: 80%;
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 15 px;
+
+        }
+        th{
+            border: 2px solid black;
+            border-collapse: collapse;
+            padding: 15 px;
+            background-color: rgb(194, 74, 5);
+            font-size: larger;
+
+        }
+        td{
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 15 px;
+
+        }
+        table tr:nth-child(even){
+            background-color: green;
+        }
+        table tr:nth-child(odd){
+            background-color: greenyellow;
+        }
+        caption{
+            font-size: x-large;
+            font-weight: bold;
+        }
+        tbody tr:hover{
+            background-color: lightsalmon;
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+<body>
+   <table>
+       <caption> Сотрудники предприятия </caption>
+       <tr>
+           <th>Код </th><th>Фамилия</th><th>Имя</th><th>Отчество</th><th>Должность</th>
+       </tr>
+       <tr>
+           <td>1</td><td>Алексеев</td><td>Иван</td><td>Иванович</td><td>Инженер</td>
+       </tr>
+       <tr>
+           <td>2</td><td>Булкин</td><td>Игорь</td><td>Вадимович</td><td>Менеджер</td>
+       </tr>
+       <tr>
+           <td>3</td><td>Петров</td><td>Максим</td><td>Денисович</td><td>Экономист</td>
+        </tr>
+        <tr>
+            <td>4</td><td>Сидоров</td><td>Олег</td><td>Александрович</td><td>Бухгалтер</td>
+        </tr>
+
+   </table>
+    
+    
+</body>
+</html>
