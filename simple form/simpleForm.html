@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Simple Form</title>
+    <style>
+    html, body {
+        min-height: 100%;
+       
+    }
+    body {
+        margin: 2cm;
+        background: linear-gradient( rgba(173,183,251) 0%, rgba(33,35,84) 100%);
+         background-repeat: no-repeat;
+        }
+     div{
+            
+      text-align: left;
+    }
+    
+    form {background: #f3f2f8;
+        display: block;
+        width: 60%;
+        margin: auto;
+        border-color:#cfced4
+    }
+    
+    .imp1 {
+        margin-top: 20px;
+        width: 40%;
+        margin-left: 5%;
+        padding: 5px;
+    }
+    .imp2 {
+        margin-top: 20px;
+        width: 30%;
+        margin-left: 5%;
+        padding: 5px;
+    }
+    .imp3 {
+        margin-top: 20px;
+        width: 15%;
+        margin-left: 5%;
+        padding: 5px;
+    }
+    .imp4 {
+        margin-top: 20px;
+        width: 88%;
+        margin-left: 5%;
+        padding: 5px;
+    }
+    .imp5 {
+        margin-top: 20px;
+        background-color: #b95dca;
+        margin-left: 5%;
+        padding: 5px;
+    }
+    .imp6 {
+        margin-top: 20px;
+        width: 65%;
+        margin-left: 5%;
+        padding: 5px;
+    }
+
+   
+    #last {
+        float: right;
+        background-color:#b95dca ;
+        color: lightgrey;
+        height: 40px;
+        width: 80px;
+        padding: 30px, 20px;
+        border: 0;
+    }
+    fieldset{
+        background: #f3f2f8;
+        border: 2px solid lavender;
+        
+    }
+    #last1 {
+        background-color :#e4e3e9;
+
+    }
+    #first1 {
+
+      background-color :#e4e3e9;
+    }
+    
+    </style>
+</head>
+<body>
+    
+        <div>
+        <form action="">
+            <div >
+                <fieldset id="first1">
+                <h1>Checkout Form</h1> 
+            </fieldset>
+            </div>
+            <div>
+            <fieldset>
+                <div>
+            <input class="imp1" type="text" placeholder="First Name" name="fname">
+            <input class="imp1" type="text" placeholder="Last Name" name="lname"> 
+                </div>
+                <div>
+            <input class="imp1" type="email" placeholder="e-mail" name="email">
+            <input class="imp1" type="tel" placeholder="phone" name="phone">
+            </div>
+        </fieldset>
+        </div>
+        <div>
+        <fieldset>
+            <div>
+            <select class="imp2" name="country"> Country
+                <option value="" disabled selected style='display:none;'>Country</option>
+                <option value="USA">USA</option>
+                <option value="Great Britain">Great Britain</option>
+                <option value="Ukraine">Ukraine</option>
+                <option value="Italy">Italy</option>
+
+            </select>
+
+            <input class="imp2" type="text" placeholder="City" name=city>
+            <input class="imp3" type="text" placeholder="Post Code" name="pcode">
+            </div>
+            <div>
+            <input class="imp4" type="text" placeholder="Adress" name="adr">
+            </div>
+            <div>
+            <textarea class="imp4" name="message" rows="4" placeholder="Additional Info"></textarea>
+            </div>
+
+            
+        </fieldset>
+        </div>
+        
+        <div>
+        <fieldset>
+            <div>
+            <input class="imp5" type="radio" name="carttype" value="Visa" checked> Visa</input>
+            <input class="imp5" type="radio" name="carttype" value="MasterCard"> MasterCard </input>
+            <input class="imp5" type="radio" name="carttype" value="PayPal" > Paypal</input>
+            </div>
+            <div>
+            <input class="imp4" type="text" name="cardname" placeholder="Name of Card">
+            </div>
+            <div>
+            <input class="imp6" type="text" name="cardnum" placeholder="Card Number">
+            <input class="imp3" type="text" name="cv" placeholder="CVV2">
+            </div>
+            <div>
+            <label class="imp1">Expiration date: 
+            <select class="imp1" name="month"> 
+                <option value="" disabled selected style='display:none;'>Month</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                
+
+            </select>
+            </label>
+                       
+            <input class="imp3" type="text" name="year" placeholder="Year">
+            </div>
+        </fieldset>
+        </div>
+        <div >
+        <fieldset id="last1">
+            <input type="button" value="Continue" id="last">
+        </fieldset>
+        </div>
+    </form>
+    </div>
+    
+
+
+    
+</body>
+</html>
